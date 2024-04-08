@@ -13,7 +13,6 @@ def test_load_portfolios():
     ):
         simulator = PortfolioSimulator()
         simulator.load_portfolios("mocked_portfolio.csv")
-        print(simulator.portfolios)
 
         # Asserting the loaded portfolios and child-parent relationships
         assert str(simulator.portfolios) == str(
