@@ -83,6 +83,7 @@ class PortfolioSimulator:
                     calculated_prices.append([parent_portfolio.name, total_price])
                     stock_name = parent_portfolio.name
                     stock_price = total_price
+                    parent_portfolio.price = total_price
                 else:
                     return
             else:
